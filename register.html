@@ -37,7 +37,7 @@
   <section class="register-section">
     <div class="container register-form">
       <h2>Sign Up</h2>
-      <form>
+      <form id="registerForm">
         <input type="text" placeholder="Full Name" required>
         <input type="email" placeholder="Email Address" required>
         <input type="password" placeholder="Password" required>
@@ -54,5 +54,14 @@
       <p>&copy; 2025 Formula5. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+  const registerForm = document.getElementById('registerForm');
+  registerForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('✅ Registration successful! Redirecting to login...');
+    window.location.href = 'login.html';
+  });
+  </script>
 </body>
 </html>
