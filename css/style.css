@@ -134,3 +134,19 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+.about-content {
+  padding: 3rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+.about-content h2 {
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.about-content p {
+  max-width: 800px;
+  margin: 0.5rem auto;
+  line-height: 1.6;
+}
