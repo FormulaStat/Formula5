@@ -38,7 +38,7 @@
   <section class="settings-section">
     <div class="container settings-form">
       <h2>Update Your Information</h2>
-      <form>
+      <form id="settingsForm">
         <input type="text" placeholder="Full Name" required>
         <input type="email" placeholder="Email Address" required>
         <input type="password" placeholder="New Password">
@@ -54,5 +54,14 @@
       <p>&copy; 2025 Formula5. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+  const settingsForm = document.getElementById('settingsForm');
+  settingsForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('✅ Settings updated successfully!');
+    settingsForm.reset();
+  });
+  </script>
 </body>
 </html>
