@@ -431,14 +431,6 @@ html {
     z-index: 999;
   }
 
-  nav ul li {
-    border-bottom: 1px solid #ffffff33;
-  }
-
-  nav ul li:last-child {
-    border-bottom: none;
-  }
-
   nav ul li a {
     color: #fff;
     padding: 1rem;
