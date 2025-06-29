@@ -408,3 +408,48 @@ html {
   border-radius: 4px;
   width: 100%;
 }
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #003366;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #003366;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    border-radius: 6px;
+    z-index: 999;
+  }
+
+  nav ul li {
+    border-bottom: 1px solid #ffffff33;
+  }
+
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  nav ul li a {
+    color: #fff;
+    padding: 1rem;
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+}
