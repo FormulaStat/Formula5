@@ -124,3 +124,13 @@ footer {
     font-size: 2rem;
   }
 }
+.logo img {
+  max-height: 50px;
+  width: auto;
+}
+.btn:hover {
+  background: #0099cc;
+}
+html {
+  scroll-behavior: smooth;
+}
