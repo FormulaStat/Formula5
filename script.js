@@ -1,5 +1,5 @@
 // Mobile Menu Toggle
-
+console.log('✅ script.js loaded');
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 
