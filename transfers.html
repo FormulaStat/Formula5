@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transfers - Formula5 Bank</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <img src="images/logo.png" alt="Formula5 Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="transactions.html">Transactions</a></li>
+          <li><a href="transfers.html">Transfers</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Make a Transfer</h1>
+      <p>Send funds securely to any account.</p>
+    </div>
+  </section>
+
+  <!-- Transfer Form -->
+  <section class="transfer-section">
+    <div class="container transfer-form">
+      <h2>Transfer Funds</h2>
+      <form>
+        <input type="text" placeholder="Recipient Name" required>
+        <input type="text" placeholder="Account Number" required>
+        <input type="number" placeholder="Amount (₦)" required>
+        <textarea placeholder="Description (optional)"></textarea>
+        <button type="submit" class="btn">Send Transfer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">
+      <p>&copy; 2025 Formula5. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
