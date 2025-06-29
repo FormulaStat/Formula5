@@ -416,6 +416,7 @@ html {
   border: none;
   color: #003366;
   cursor: pointer;
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {
