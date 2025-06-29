@@ -193,3 +193,44 @@ html {
   font-size: 0.95rem;
   color: #555;
 }
+.login-section {
+  padding: 3rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: auto;
+  background: #f0f4fa;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.login-form h2 {
+  margin-bottom: 1.5rem;
+  color: #003366;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.login-form .register-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-form .register-link a {
+  color: #0055a5;
+  text-decoration: none;
+}
