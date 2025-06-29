@@ -377,3 +377,34 @@ html {
   resize: vertical;
   min-height: 80px;
 }
+.settings-section {
+  padding: 3rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+.settings-form {
+  max-width: 400px;
+  margin: auto;
+  background: #f0f4fa;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.settings-form h2 {
+  margin-bottom: 1.5rem;
+  color: #003366;
+}
+
+.settings-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.settings-form input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
