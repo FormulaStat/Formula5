@@ -312,3 +312,30 @@ html {
   font-size: 1.2rem;
   font-weight: bold;
 }
+.transactions-section {
+  padding: 3rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.transactions-table th,
+.transactions-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.transactions-table th {
+  background: #003366;
+  color: #fff;
+}
+
+.transactions-table tr:nth-child(even) {
+  background: #f0f4fa;
+}
