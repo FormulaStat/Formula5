@@ -38,7 +38,7 @@
   <section class="transfer-section">
     <div class="container transfer-form">
       <h2>Transfer Funds</h2>
-      <form>
+      <form id="transferForm">
         <input type="text" placeholder="Recipient Name" required>
         <input type="text" placeholder="Account Number" required>
         <input type="number" placeholder="Amount (₦)" required>
@@ -54,5 +54,14 @@
       <p>&copy; 2025 Formula5. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+  const transferForm = document.getElementById('transferForm');
+  transferForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('✅ Transfer submitted successfully!');
+    transferForm.reset();
+  });
+  </script>
 </body>
 </html>
