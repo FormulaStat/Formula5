@@ -464,3 +464,27 @@ html {
 .feature:hover {
   transform: translateY(-10px);
 }
+
+/* Mobile Nav Toggle */
+#navLinks {
+  display: none;
+  flex-direction: column;
+  background: #003366;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 200px;
+  padding: 20px;
+}
+
+#navLinks.show {
+  display: flex;
+}
+
+#navLinks li {
+  margin-bottom: 15px;
+}
+
+#navLinks li a {
+  color: #fff;
+}
