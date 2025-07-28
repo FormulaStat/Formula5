@@ -17,20 +17,25 @@ if (loginForm) {
   loginForm.addEventListener('submit', async function(e) {
     e.preventDefault();
 
-    const formData = new FormData(loginForm);
-    const response = await fetch(`${API_URL}/login.php`, {
-      method: 'POST',
-      body: formData
-    });
+    try {
+      const formData = new FormData(loginForm);
+      const response = await fetch(`${API_URL}/login.php`, {
+        method: 'POST',
+        body: formData
+      });
 
-    const result = await response.json();
+      const result = await response.json();
 
-    if (result.success) {
-      alert('✅ Login successful!');
-      localStorage.setItem('user', JSON.stringify(result.user)); // Optional
-      window.location.href = 'dashboard.html';
-    } else {
-      alert('❌ Login failed: ' + result.message);
+      if (result.success) {
+        alert('✅ Login successful!');
+        localStorage.setItem('user', JSON.stringify(result.user));
+        window.location.href = 'dashboard.html';
+      } else {
+        alert('❌ Login failed: ' + result.message);
+      }
+    } catch (error) {
+      alert('❌ Network error. Please try again later.');
+      console.error(error);
     }
   });
 }
@@ -41,19 +46,24 @@ if (registerForm) {
   registerForm.addEventListener('submit', async function(e) {
     e.preventDefault();
 
-    const formData = new FormData(registerForm);
-    const response = await fetch(`${API_URL}/register.php`, {
-      method: 'POST',
-      body: formData
-    });
+    try {
+      const formData = new FormData(registerForm);
+      const response = await fetch(`${API_URL}/register.php`, {
+        method: 'POST',
+        body: formData
+      });
 
-    const result = await response.json();
+      const result = await response.json();
 
-    if (result.success) {
-      alert('✅ Registration successful!');
-      window.location.href = 'login.html';
-    } else {
-      alert('❌ Registration failed: ' + result.message);
+      if (result.success) {
+        alert('✅ Registration successful!');
+        window.location.href = 'login.html';
+      } else {
+        alert('❌ Registration failed: ' + result.message);
+      }
+    } catch (error) {
+      alert('❌ Network error. Please try again later.');
+      console.error(error);
     }
   });
 }
@@ -64,19 +74,24 @@ if (transferForm) {
   transferForm.addEventListener('submit', async function(e) {
     e.preventDefault();
 
-    const formData = new FormData(transferForm);
-    const response = await fetch(`${API_URL}/transfer.php`, {
-      method: 'POST',
-      body: formData
-    });
+    try {
+      const formData = new FormData(transferForm);
+      const response = await fetch(`${API_URL}/transfer.php`, {
+        method: 'POST',
+        body: formData
+      });
 
-    const result = await response.json();
+      const result = await response.json();
 
-    if (result.success) {
-      alert('✅ Transfer submitted successfully!');
-      transferForm.reset();
-    } else {
-      alert('❌ Transfer failed: ' + result.message);
+      if (result.success) {
+        alert('✅ Transfer submitted successfully!');
+        transferForm.reset();
+      } else {
+        alert('❌ Transfer failed: ' + result.message);
+      }
+    } catch (error) {
+      alert('❌ Network error. Please try again later.');
+      console.error(error);
     }
   });
 }
@@ -87,19 +102,24 @@ if (settingsForm) {
   settingsForm.addEventListener('submit', async function(e) {
     e.preventDefault();
 
-    const formData = new FormData(settingsForm);
-    const response = await fetch(`${API_URL}/settings.php`, {
-      method: 'POST',
-      body: formData
-    });
+    try {
+      const formData = new FormData(settingsForm);
+      const response = await fetch(`${API_URL}/settings.php`, {
+        method: 'POST',
+        body: formData
+      });
 
-    const result = await response.json();
+      const result = await response.json();
 
-    if (result.success) {
-      alert('✅ Settings updated!');
-      settingsForm.reset();
-    } else {
-      alert('❌ Failed to update settings: ' + result.message);
+      if (result.success) {
+        alert('✅ Settings updated!');
+        settingsForm.reset();
+      } else {
+        alert('❌ Failed to update settings: ' + result.message);
+      }
+    } catch (error) {
+      alert('❌ Network error. Please try again later.');
+      console.error(error);
     }
   });
 }
